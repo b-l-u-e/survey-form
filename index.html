@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="descriptive">
+      <h1 id="title">The Customer-services Form</h1>
+       <p id="description"> Fill in the Details</p>
+    </div>
+
+
+     <form id="title" action="/" method="post">
+       <div class="container">
+
+         <form id="survey-form" action="index.html" method="post">
+
+           <label id="name-label" for="name"> Name</label>
+           <input type="text" id="name" class="form-control is-valid" name="name" placeholder="Your name..">
+
+           <label id="email-label" for="email">Email</label>
+           <input type="email" id="email" class="form-control is-valid" name="email" placeholder="Your email address..">
+
+           <label id="number-label" for="number">Number</label>
+           <input type="number" id="number" class="form-control is-valid" name="number" placeholder="Your number..">
+
+              <p>Scale 1-10</p>
+                <label class="inner">1-3
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="inner">3-5
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="inner">5-7
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="inner">7-10
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+            </div>
+
+          <div class="info">
+            <label for="ourservices">Ratings:</label>
+            <select id="dropdown" name="ourservices">
+              <option value="very-satisfied">very-satisfied</option>
+              <option value="satisfied">satisfied</option>
+              <option value="good">good</option>
+             <option value="not-satisfied">not-satisfied</option>
+            </select>
+          </div>
+
+        <div class="infobox">
+          <label class="inner-info">Do they offer personalized customer services
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="inner-info">Do they offer online or offline integration
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="inner-info">Do they make most of mobile payment
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="inner-info">Do they offer loyalty rewards
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="inner-info">Do they offer store financing
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="subform">
+          <label id="subinfo" for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+             <input type="submit" value="Submit">
+        </div>
+
+
+
+
+         </form>
+
+
+  </body>
+</html>
